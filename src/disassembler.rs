@@ -33,3 +33,16 @@ impl DisassemblySection {
         address >= self.start && address <= self.end
     }
 }
+
+impl Default for DisassemblySection {
+    fn default() -> Self {
+        DisassemblySection {
+            branchfrom: 0,
+            branchto: 0,
+            start: 0,
+            end: 0,
+            is_subroutine: false,
+            instructions: Vec::new(),
+        }
+    }
+}
