@@ -1,0 +1,12 @@
+[package]
+name = "snes_disassembler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+color-eyre = "0.6.5"
+crossbeam = { version = "0.8.4", features = ["crossbeam-channel"] }
+hashbrown = "0.15.4"
+log = "0.4.27"
+num_enum = "0.7.4"
+parking_lot = "0.12.4"
